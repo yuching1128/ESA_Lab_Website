@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/style.css")
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' integrity='sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns' crossorigin='anonymous'>
+
+</head>
+<body>
+    <button class="fas fa-angle-double-up" onclick="topFunction()" id="myBtn" title="Go to top"></button>
+    <div class="navbar navbar-inverse navbar-fixed-top " style="text-align:center;">
+        <div class="container" >
+            <div class="navbar-header">
+                @Html.ActionLink("ESA LAB", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" >
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("實驗室簡介", "About", "Home")</li>
+                    <li>@Html.ActionLink("指導教授", "Professor", "Home")</li>
+                    <li>@Html.ActionLink("實驗室成員", "Member", "Home")</li>
+                    <li>@Html.ActionLink("留言板", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content ">
+        @RenderBody()
+        <hr />
+        <br />
+    </div>
+    <footer>
+        <br />
+        <div class="foot1">
+            <p>新竹市大學路1001號 國立交通大學 工程三館 622 室</p>
+            <p>
+                Addr. Dept. of C.S. & Info. Eng. Nat'l Chiao Tung Univ. Hsinchu 30010 Taiwan, R.O.C.
+            </p>
+            <p>Tel 03-571-2121 Ext. 54750</p>
+            <p>FAX 03-572-4176</p>
+        </div>
+        <div class="foot2">
+            <br /><br />
+            <p>&copy; @DateTime.Now.Year - ESA LAB</p>
+        </div>
+    </footer>
+    @Scripts.Render("~/Scripts/JavaScript.js")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
