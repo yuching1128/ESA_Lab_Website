@@ -96,3 +96,4 @@ C:\Users\user\Desktop\課\網頁設計\LabWebsite\LabWebsite\obj\Debug\LabWebsit
 C:\Users\user\Desktop\課\網頁設計\LabWebsite\LabWebsite\obj\Debug\LabWebsite.csproj.CopyComplete
 C:\Users\user\Desktop\課\網頁設計\LabWebsite\LabWebsite\obj\Debug\LabWebsite.dll
 C:\Users\user\Desktop\課\網頁設計\LabWebsite\LabWebsite\obj\Debug\LabWebsite.pdb
+C:\Users\user\Desktop\lab website\LabWebsite\obj\Debug\LabWebsite.csprojResolveAssemblyReference.cache
