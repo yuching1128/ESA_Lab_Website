@@ -186,12 +186,17 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Professor.cshtml" />
     <Content Include="Views\Home\Member.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Professor.cshtml" />
+    <Content Include="Views\Home\Publication.cshtml" />
+    <Content Include="Views\Home\Research.cshtml" />
+    <Content Include="Views\Home\Patent.cshtml" />
+    <Content Include="Views\Home\Honors.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="img\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

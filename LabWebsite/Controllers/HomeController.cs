@@ -26,6 +26,30 @@ namespace LabWebsite.Controllers
 
             return View();
         }
+        public ActionResult Publication()
+        {
+            ViewBag.Message = "著作";
+
+            return View();
+        }
+        public ActionResult Research()
+        {
+            ViewBag.Message = "研究計畫";
+
+            return View();
+        }
+        public ActionResult Patent()
+        {
+            ViewBag.Message = "專利";
+
+            return View();
+        }
+        public ActionResult Honors()
+        {
+            ViewBag.Message = "獲獎殊榮";
+
+            return View();
+        }
 
         public ActionResult Member()
         {

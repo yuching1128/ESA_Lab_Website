@@ -1,23 +1,28 @@
-﻿#myBtn {
+﻿body {
+    font-family: Microsoft JhengHei !important;
+}
+.header {
+    filter: Alpha(opacity=60)!important;
+}
+#myBtn {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 100px;
     z-index: 99;
-    font-size: 18px;
+    font-size: 30px;
     border: none;
     outline: none;
-    background-color: darkslategray;
+    background-color: #2f4052 !important;
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 #myBtn:hover {
     background-color: #555;
 }
-
 footer {
     color: aliceblue;
     width: 100%;
@@ -32,11 +37,34 @@ footer {
     width: 50%;
     float: left;
 }
-
-
 .foot2 {
     text-align: right;
     padding-left: 5%;
     width: 30%;
     float: left;
+}
+
+.professor-img {
+    height: 285px;
+    width: 283px;
+}
+
+#professor {
+    margin: 50px;
+}
+li {
+    font-size: 16px;
+    font-family: Microsoft JhengHei !important;
+}
+h2 {
+    font-family: Microsoft JhengHei !important;
+}
+.btn-professor {
+    padding: 6px 70px !important;
+    font-size: 18px !important;
+}
+.link ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }

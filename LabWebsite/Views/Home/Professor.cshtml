@@ -2,6 +2,91 @@
 @{
     ViewBag.Title = "Professor";
 }
+<body style="font-family: Microsoft JhengHei !important;">
+    <div id="container">
+        <br /><br />
+            <div class="link" >
+                  <input type="button" class="btn-professor btn btn-default"  onclick="javascript:location.href='Professor'" value="簡介">
+                  <input type="button" class="btn-professor btn btn-default"  onclick="javascript:location.href='Publication'" value="著作">
+                  <input type="button" class="btn-professor btn btn-default"  onclick="javascript:location.href='Research'" value="研究計畫">
+                  <input type="button" class="btn-professor btn btn-default"  onclick="javascript:location.href='Patent'" value="專利">
+                  <input type="button" class="btn-professor btn btn-default"  onclick="javascript:location.href='Honors'" value="獲獎殊榮">                
+              </div>
+        <br />
+        <div id="professor" class="row">
+            <div class="col-md-4">
+                <img class="professor-img" src="~/img/professor.jpg" />
+            </div>
+            <div class="col-md-8 text-center">
+                <h2>林伯星 副教授</h2>
+                <h3>Bor-Shing Lin</h3>
+                <h4>Associate Professor</h4>
+                <h4>
+                    Department of Computer Science and Information Engineering
+                </h4>
+                <h4>
+                    National Taipei University
+                </h4>
+            </div>
 
-<h2>Professor</h2>
+        </div>
+        <hr />
+        <div id="education">
+            <h2>學歷(Education)</h2>
+            <ul>
+                <li>
+                    國立台灣大學 電子工程研究所 ICS組 博士班 畢業 (Ph.D. in Institute of Electrical Engineering, National Taiwan University, 2006.)
+                </li>
+                <li>
+                    國立台灣大學 電機工程研究所 碩士班 畢業 (M.S. in Institute of Electrical Engineering, National Taiwan University, 1999.)
+                </li>
+                <li>
+                    國立成功大學 電機工程學系 畢業 (B.S. in Department of Electrical Engineering, National Cheng Kung University, 1997.)
+                </li>
+            </ul>
+
+        </div>
+        <hr />
+        <div id="experiences">
+            <h2>經歷 (Experiences)</h2>
+            <ul>
+                <li>
+                    現任 國立台北大學資訊工程系 系主任 (2017,8- )<br />
+                    Chair, Department of Computer Science and Information Engineering, National Taipei University (2017,8-)
+                </li>
+                <li>
+                    現任 國立台北大學資訊工程系 副教授 (2016,2- )<br />
+                    Associate Professor, Department of Computer Science and Information Engineering, National Taipei University (2016,2-)
+                </li>
+                <li>
+                    國立台北大學資訊工程系 助理教授 (2009,8-2016,1)<br />
+                    Assistant Professor, Department of Computer Science and Information Engineering, National Taipei University (2009,8-2016,1)
+                </li>
+                <li>
+                    長庚大學工業設計學系 兼任助理教授 (2014,8- 2017,1)<br />
+                    Adjunct Assistant Professor, Department of Industrial Design, Chang Gung University (2014,8-2017,1)
+                </li>
+                <li>
+                    國立交通大學光電系統研究所 兼任助理教授 (2013,2-2014,7)<br />
+                    Adjunct Assistant Professor, Institute of Photonic System, National Chiao Tung University (2013,2-2014,7)
+                </li>
+                <li>
+                    晨星半導體主任工程師 (2007,12-2009,5)
+                </li>
+                <li>LG DTV GP(Global Platform) Project (2008,4-2009,2)</li>
+                <li>韓國首爾LG DTV Lab研究及開發DTV產品 (2008,5-2008,6)</li>
+            </ul>
+        </div>
+        <hr />
+        <div id="research-interests">
+            <h2>研究專長 (Research Interests)</h2>
+            <ul>
+                <li>嵌入式系統 (Embedded Systems)</li>
+                <li>穿戴式系統 (Wearable Systems)</li>
+                <li>生醫訊號處理 (Biomedical Signal Processing)</li>
+                <li>可攜式生醫電子系統設計 (Portable Biomedical Electronical Systems Design)</li>
+            </ul>
+        </div>
+    </div>
+</body>
 
