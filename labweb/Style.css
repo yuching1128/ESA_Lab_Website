@@ -1,0 +1,19 @@
+﻿.mySlides {
+    display: none;
+}
+
+#leftside {
+    float: left;
+    margin-left: 300px;
+}
+
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 25px 0px 25px;
+}
+.button4:hover {
+        background-color: #e7e7e7;
+}
