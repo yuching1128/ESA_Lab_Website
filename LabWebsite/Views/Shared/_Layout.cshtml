@@ -5,16 +5,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
+    <link rel='stylesheet' href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
     @Styles.Render("~/Content/style.css")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' integrity='sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns' crossorigin='anonymous'>
 
+
+
+    <script src="~/Scripts/JavaScript.js"></script>
+    <script src="~/bundles/jquery"></script>
+    <script src="~/bundles/bootstrap"></script>
 </head>
 <body>
-    <button class="fas fa-angle-double-up" onclick="topFunction()" id="myBtn" title="Go to top"></button>
+    <button  onclick="topFunction()" id="myBtn" title="Go to top">top</button>
     <div class="header navbar navbar-inverse navbar-fixed-top ">
-        <div class="container" >
+        <div class="container">
             <div class="navbar-header">
                 @Html.ActionLink("ESA LAB", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -23,7 +28,7 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div class="navbar-collapse collapse" >
+            <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("實驗室簡介", "About", "Home")</li>
                     <li>@Html.ActionLink("指導教授", "Professor", "Home")</li>
@@ -53,9 +58,7 @@
             <p>&copy; @DateTime.Now.Year - ESA LAB</p>
         </div>
     </footer>
-    @Scripts.Render("~/Scripts/JavaScript.js")
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>
+
+

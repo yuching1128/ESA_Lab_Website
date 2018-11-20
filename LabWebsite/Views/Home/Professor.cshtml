@@ -2,16 +2,18 @@
 @{
     ViewBag.Title = "Professor";
 }
+
+@Styles.Render("~/Content/style.css")
 <body style="font-family: Microsoft JhengHei !important;">
     <div id="container">
         <br /><br />
-            <div class="link" >
-                  <input type="button" class="btn-professor btn btn-default"  onclick="javascript:location.href='Professor'" value="簡介">
-                  <input type="button" class="btn-professor btn btn-default"  onclick="javascript:location.href='Publication'" value="著作">
-                  <input type="button" class="btn-professor btn btn-default"  onclick="javascript:location.href='Research'" value="研究計畫">
-                  <input type="button" class="btn-professor btn btn-default"  onclick="javascript:location.href='Patent'" value="專利">
-                  <input type="button" class="btn-professor btn btn-default"  onclick="javascript:location.href='Honors'" value="獲獎殊榮">                
-              </div>
+        <div class="link">
+            <input type="button" class="btn-professor btn btn-default" onclick="javascript:location.href='Professor'" value="簡介">
+            <input type="button" class="btn-professor btn btn-default" onclick="javascript:location.href='Publication'" value="著作">
+            <input type="button" class="btn-professor btn btn-default" onclick="javascript:location.href='Research'" value="研究計畫">
+            <input type="button" class="btn-professor btn btn-default" onclick="javascript:location.href='Patent'" value="專利">
+            <input type="button" class="btn-professor btn btn-default" onclick="javascript:location.href='Honors'" value="獲獎殊榮">
+        </div>
         <br />
         <div id="professor" class="row">
             <div class="col-md-4">

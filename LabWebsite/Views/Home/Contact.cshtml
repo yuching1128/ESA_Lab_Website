@@ -2,6 +2,50 @@
 @{
     ViewBag.Title = "Contact";
 }
+@Styles.Render("~/Content/style.css")
 
-<h2>Contact</h2>
+<body>
+    <div id="contact">
+        <br /><br /><br />
+        <div>
+            <p class="header">Message Board</p>
+            <hr class="side">
+            <p class="word">感謝您蒞臨本網站</p>
+            <p class="word">如果有任何問題，歡迎在底下留言☺</p>
+        </div>
+        <div>
+            <div id="fb-root"></div>
+        </div>
+        <div class="fb-comments" data-href="http://localhost:51799/contact.html" data-numposts="5"></div>
+    </div>
+</body>
 
+<script>
+
+    //< !--contact-facebook- >
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '2170941216461044',
+            autoLogAppEvents: true,
+            xfbml: true,
+            version: 'v3.2'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.2&appId=2170941216461044&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+</script>
