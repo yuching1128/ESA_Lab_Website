@@ -30,10 +30,11 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("實驗室簡介", "About", "Home")</li>
-                    <li>@Html.ActionLink("指導教授", "Professor", "Home")</li>
-                    <li>@Html.ActionLink("實驗室成員", "Member", "Home")</li>
-                    <li>@Html.ActionLink("留言板", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("實驗室簡介", "About", "Home", new { title = "About" })</li>
+                    <li><a href="http://web.ntpu.edu.tw/~bslin/" title="Professor">指導教授</a></li>
+                    <li>@Html.ActionLink("實驗室成員", "Member", "Home", new { title = "Member" })</li>
+                    <li>@Html.ActionLink("留言板", "Contact", "Home", new { title = "Contact" })</li>
+                    <li>@Html.ActionLink("[English]", "English", "Home", new { title = "English" })</li>
                 </ul>
             </div>
         </div>

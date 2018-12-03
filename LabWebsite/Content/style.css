@@ -4,9 +4,12 @@
 body {
     background-color: rgba(204, 204, 204, 1);
 }
+.language{
+    float:left!important;
+}
 
 .header {
-    filter: Alpha(opacity=60)!important;
+    filter: Alpha(opacity=60) !important;
 }
 #myBtn {
     display: none;

@@ -63,6 +63,12 @@ namespace LabWebsite.Controllers
 
             return View();
         }
+        public ActionResult English()
+        {
+            ViewBag.Message = "英文版本";
+
+            return View();
+        }
     }
 }
 
