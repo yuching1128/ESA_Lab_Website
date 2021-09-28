@@ -10,7 +10,7 @@ It can be simply divided into five pages：
 
 * index.html - Home page
 * About.html - Description of this lab
-* Member.html - former and current students of this lab
+* Member.html - Former and current students of this lab
 * Contract.html - You can leave any information from here
 * English.html - English description of the lab
 
